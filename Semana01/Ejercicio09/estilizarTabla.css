@@ -1,0 +1,49 @@
+/* Paletas de colores 
+verde:      #88d1ca
+crema:      #ded6c9
+Naranja:    #e68a2e
+Rojo:       #c90a00
+Marrón:     #452b34
+*/
+
+body {
+    
+    background-color: #ded6c9;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+/* Retoques en la Tabla */
+.tabla-estilizada {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+/* Encabezados y celdas de la tabla */
+.tabla-estilizada th {
+    background-color: #88d1ca;
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+}
+.tabla-estilizada td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-size: 1.1em;
+}
+
+/* Estilo de las filas pares e impares */
+.tabla-estilizada tr:nth-child(even) {
+    background-color: #e68a2e;
+}
+
+.tabla-estilizada tr:nth-child(odd) {
+    background-color: #ffffff; 
+}
+
+

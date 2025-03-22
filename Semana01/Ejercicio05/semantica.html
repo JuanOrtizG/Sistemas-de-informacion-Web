@@ -1,0 +1,62 @@
+<!--    
+    Ejercicio 05: Aprender sobre etiquetas semánticas como <header>, <footer>,
+<section>, y <article>.
+
+● Crea un documento HTML con las siguientes secciones:
+    ○ Un encabezado <header> con un título de la página.
+    ○ Un contenido principal dentro de una etiqueta <section> que
+    incluya un <article> con un título y párrafo.
+    ○ Un pie de página <footer> que contenga información de copyright.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con etiquetas semánticas</title>
+    <style>
+        /* Practicando estilos desde la etiqueta style */
+        header, footer {
+            background-color: lightgray;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        article {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <header>
+        <h1>Bienvenido a mi página web</h1>
+    </header>
+
+   
+    <section>
+        <h2>Sistema de información WEB</h2>
+
+        <article>
+            <h3>Artículo</h3>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </article>
+    </section>
+
+ 
+    <footer>
+        <p>&copy; 2025 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

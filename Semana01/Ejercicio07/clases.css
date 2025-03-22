@@ -1,0 +1,39 @@
+/* Paletas de colores 
+verde:      #88d1ca
+crema:      #ded6c9
+Naranja:    #e68a2e
+Rojo:       #c90a00
+Marrón:     #452b34
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.encabezado {
+    background-color: #88d1ca; /* Azul */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.contenido {
+    background-color: #ded6c9; /* Gris claro */
+    padding: 40px;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+
+.pie-de-pagina {
+    background-color: #e68a2e; /* Gris oscuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
