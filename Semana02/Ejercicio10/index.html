@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio04</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>	
+    .container {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+    border: 2px solid #ccc;
+    }
+
+    input {
+        display: block;
+        width: 90%;
+        padding: 8px;
+        margin: 10px auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        padding: 10px;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Diferencia entre Fechas.</h2>
+        <p>Para el calculo, ingrese las fechas por favor:</p>
+        <form action="">
+            <label for="label_fecha1">Fecha inicio</label>
+            <input type="date" id="fecha1" placeholder="dd/mm/yyyy">
+            <label for="label_fecha2">Fecha final</label>
+            <input type="date" id="fecha2" placeholder="dd/mm/yyyy">
+        </form>
+        <button id="calcular">Calcular</button>
+        
+        <h2 id="mensaje" style="color: palevioletred">Fecha A - Fecha B = </h2>
+
+    </div>
+
+    <script>
+        //capturamos el click del boton calcular
+        document.getElementById("calcular").addEventListener("click", function() {
+            let fecha1 = document.getElementById("fecha1").value;
+            let fecha2 = document.getElementById("fecha2").value;
+            let mensaje = document.getElementById("mensaje");
+
+            // Validamos que los campos no estén vacíos
+            if (!fecha1 || !fecha2) {
+                mensaje.innerHTML = "⚠️ Error: Debe ingresar ambas fechas.";
+                mensaje.style.color = "red";
+                return;
+            }
+
+            // Convertimos las fechas a objetos Date
+            let date1 = new Date(fecha1);
+            let date2 = new Date(fecha2);
+
+            let diferencia = (date2 - date1) / (1000 * 60 * 60 * 24); // Diferencia en días
+
+            if (diferencia < 0) {
+                mensaje.innerHTML = "⚠️ Error: La segunda fecha debe ser mayor o igual a la primera.";
+                mensaje.style.color = "red";
+            } else {
+                mensaje.innerHTML = `✅ La diferencia es de <strong>${diferencia}</strong> días.`;
+                mensaje.style.color = "green";
+            }
+        });
+
+    </script>
+</body>
+</html>
