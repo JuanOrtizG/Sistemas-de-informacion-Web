@@ -1,0 +1,26 @@
+/* Definición de las keyframes */
+@keyframes fadeInMove {
+    from {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(100%);
+    }
+}
+
+/* Aplicación de la animación al elemento */
+div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    
+    animation-name: fadeInMove;               /* Nombre de la animación */
+    animation-duration: 3s;                   /* Duración de la animación */
+    animation-timing-function: ease-in-out;   /* Función de temporización */
+    animation-delay: 1s;                      /* Retraso antes de iniciar la animación */
+    animation-iteration-count: infinite;      /* Número de repeticiones */
+    animation-direction: alternate;           /* Dirección de la animación */
+    animation-fill-mode: forwards;            /* Estilo final de la animación */
+}

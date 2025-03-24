@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+.car {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    animation: race 4s linear infinite;
+}
+
+.car img {
+    width: 100%; 
+    height: auto;
+}
+
+.car1 {
+    top: 80px;
+    animation-duration: 3s;
+}
+
+.car2 {
+    top: 160px;
+    animation-duration: 4s;
+}
+
+.car3 {
+    top: 260px;
+    animation-duration: 5s;
+}
+
+@keyframes race {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: calc(100% - 100px); 
+    }
+}
